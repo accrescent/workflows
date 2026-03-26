@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: © 2026 Logan Magee
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: REUSE compliance check
+
+on: [pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: fsfe/reuse-action@v6
