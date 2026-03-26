@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-name: REUSE compliance check
+name: REUSE compliance
 
 on: [pull_request]
 
